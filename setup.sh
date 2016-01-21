@@ -14,5 +14,6 @@ fi
 
 vim +PluginInstall +qall
 
-
+cd ~/.vim/bundle/YouCompleteMe;\
+    ./install.sh --clang-completer
 
