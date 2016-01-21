@@ -1,3 +1,7 @@
+" .vimrc 
+" cnsworder@gmail.com
+"
+
 set nocompatible
 set fileencoding=utf-8
 set encoding=utf-8
@@ -28,7 +32,8 @@ Plugin 'bling/vim-airline'
 Plugin 'terryma/vim-multiple-cursors.git'
 
 "主题配色
-Plugin 'molokai'
+"Plugin 'molokai'
+Plugin 'zenorocha/dracula-theme',{'rtp':'vim/'}
 "Plugin 'tango.vim'
 
 "搜索定位
@@ -96,6 +101,8 @@ else
     Plugin 'Valloric/YouCompleteMe'
 endif
 
+" 代码统计
+Plugin 'wakatime/vim-wakatime'
 
 "Plugin 'FriedSock/smeargle'
 "Plugin 'snipMate'
@@ -119,9 +126,11 @@ else
 "    colorscheme tango
 endif
 
-"set guifont=文泉驿等宽微米黑\ 12
-"set guifont=DejaVu\ Sans\ Mono\ 10
-set guifont=Source\ Code\ Pro\ 10
+if has("gui_running")
+    "set guifont=文泉驿等宽微米黑\ 12
+    "set guifont=DejaVu\ Sans\ Mono\ 10
+    set guifont=Source\ Code\ Pro\ 10
+endif
 
 set nobackup
 set cursorline
@@ -249,6 +258,11 @@ map <leader>zn :set nofoldenable<cr>
 set foldmethod=indent
 set nofoldenable
 syntax on
-colorscheme molokai
+
+try
+    colorscheme dracula
+catch     
+    colorscheme ron
+endtry
 
 "PluginUpdate
