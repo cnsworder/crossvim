@@ -63,6 +63,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 "golang
 Plugin 'fatih/vim-go'
+"python
+Plugin 'vim-flake8'
 
 "代码导航
 Plugin 'Tagbar'
@@ -258,6 +260,7 @@ map <leader>zn :set nofoldenable<cr>
 set foldmethod=indent
 set nofoldenable
 syntax on
+set backspace=indent,eol,start
 
 try
     colorscheme dracula
