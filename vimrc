@@ -38,6 +38,8 @@ Plugin 'zenorocha/dracula-theme',{'rtp':'vim/'}
 
 "搜索定位
 Plugin 'Lokaltog/vim-easymotion'
+"搜索
+Plugin 'rking/ag.vim'
 "任务列表
 Plugin 'TaskList.vim'
 "撤销树
@@ -104,7 +106,7 @@ else
 endif
 
 " 代码统计
-Plugin 'wakatime/vim-wakatime'
+"Plugin 'wakatime/vim-wakatime'
 
 "Plugin 'FriedSock/smeargle'
 "Plugin 'snipMate'
