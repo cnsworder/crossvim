@@ -14,7 +14,15 @@ set backupdir=/tmp
 set directory=/tmp
 
 set rtp+=~/.vim/bundle/vundle
-call vundle#begin()
+
+try
+    call vundle#begin()
+catch
+    !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+    source .vimrc
+    PluginInstall
+    quit
+endtry
 
 "包管理
 Plugin 'gmarik/vundle'
