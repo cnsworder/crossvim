@@ -207,7 +207,7 @@ set cscopeprg=gtags-cscope
 "set encoding=utf-8
 "let g:Powerline_symbols = 'unicode'
 
-let g:ycm_global_ycm_extra_conf="~/.vim/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycm/cpp/ycm/.ycm_extra_conf.py"
 let g:ycm_filetype_blacklist = {
             \ 'tagbar' : 1,
             \ 'text' : 1,
