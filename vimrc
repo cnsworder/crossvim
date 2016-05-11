@@ -207,7 +207,7 @@ set cscopeprg=gtags-cscope
 "set encoding=utf-8
 "let g:Powerline_symbols = 'unicode'
 
-let g:ycm_global_ycm_extra_conf="~/.vim/bundle/YouCompleteMe/third_party/ycm/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 let g:ycm_filetype_blacklist = {
             \ 'tagbar' : 1,
             \ 'text' : 1,
@@ -244,6 +244,9 @@ nnoremap <F10> :PluginUpdate <cr>
 nnoremap <leader>n :set number! <cr>
 nnoremap <leader>l :set list! <cr>
 nnoremap <leader>b :set wrap!<cr>
+nnoremap <silent> <leader>g :YcmCompleter GoTo <cr>
+nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
+nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
 
 nmap <silent> <leader>b :FufBuffer <cr>
 nmap <silent> <leader>f :FufFile <cr>
