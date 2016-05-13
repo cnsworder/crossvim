@@ -159,10 +159,14 @@ set autoindent
 "let g:indent_guides_guide_size=1
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-"let g:indentLine_color_term = 239
-"let g:indentLine_color_gui = '#A4E57E'
-"let g:indentLine_char = '┆'
+let g:indentLine_color_term = 239
+let g:indentLine_color_gui = '#A4E57E'
+let g:indentLine_char = '┆'
 "IndentGuidesToggle
+
+"let g:indentLine_char = "|"
+let g:indentLine_concealcursor = 'inc'
+autocmd FileType json let g:indentLine_conceallevel = 0
 
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = '<'
@@ -228,6 +232,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++14 -Wall'
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 
+
 "let g:syntastic_c_cflags_file=".clang_complete"
 "let g:airline#extension#tabline#enabled = 1
 "let g:ctrlp_cmd = 'CtrlPBuffer'
@@ -280,5 +285,7 @@ try
 catch     
     colorscheme ron
 endtry
+
+"set conceallevel=0
 
 "PluginUpdate
