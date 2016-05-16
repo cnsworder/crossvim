@@ -141,7 +141,7 @@ endif
 if has("gui_running")
     "set guifont=文泉驿等宽微米黑\ 12
     "set guifont=DejaVu\ Sans\ Mono\ 10
-    set guifont=Source\ Code\ Pro\ 10
+    set guifont=Source\ Code\ Pro:h16
 endif
 
 set nobackup
