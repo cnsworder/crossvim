@@ -60,6 +60,8 @@ Plugin 'kien/rainbow_parentheses.vim'
 "括号补全
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'surround.vim'
+" 扩展选择区域
+Plugin 'terryma/vim-expand-region'
 
 "头文件和源文件快速跳转
 Plugin 'a.vim'
@@ -285,6 +287,12 @@ try
 catch     
     colorscheme ron
 endtry
+
+function! Hackvim()
+    :e ~/.vimrc
+endfunction
+command! Hackvim :call Hackvim()
+nmap <leader>h :call Hackvim()<cr>
 
 "set conceallevel=0
 
