@@ -31,8 +31,8 @@ Plugin 'L9'
 "目录树
 Plugin 'The-NERD-tree'
 "快速搜索
-Plugin 'FuzzyFinder'
-"Plugin 'ctrlp.vim'
+"Plugin 'FuzzyFinder'
+Plugin 'ctlpvim/ctrlp.vim'
 "状态栏
 Plugin 'bling/vim-airline'
 "Plugin 'Lokaltog/vim-powerline.git'
