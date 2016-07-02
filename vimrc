@@ -32,7 +32,7 @@ Plugin 'L9'
 Plugin 'The-NERD-tree'
 "快速搜索
 "Plugin 'FuzzyFinder'
-Plugin 'ctlpvim/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 "状态栏
 Plugin 'bling/vim-airline'
 "Plugin 'Lokaltog/vim-powerline.git'
