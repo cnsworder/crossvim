@@ -1,4 +1,4 @@
-" .vimrc 
+" .vimrc
 " cnsworder@gmail.com
 "
 
@@ -38,6 +38,8 @@ Plugin 'bling/vim-airline'
 "Plugin 'Lokaltog/vim-powerline.git'
 "多光标
 Plugin 'terryma/vim-multiple-cursors.git'
+" editorconfig
+Plugin 'editorconfig/editorconfig-vim'
 
 "主题配色
 "Plugin 'molokai'
@@ -109,7 +111,7 @@ endif
 "标签页
 "Plugin 'minibufexpl.vim'
 "代码提示
-if v:version < 703 
+if v:version < 703
     Plugin 'clang-complete'
 else
     Plugin 'Valloric/YouCompleteMe'
@@ -134,7 +136,7 @@ filetype plugin indent on
 
 
 if has("gui_running")
-    set guioptions-=T    
+    set guioptions-=T
 else
     set t_Co=256
 "    colorscheme tango
@@ -275,7 +277,7 @@ map <leader>zz :set foldenable<cr>
 map <leader>zn :set nofoldenable<cr>
 
 "nerdcommment <leader>cc <leader>cu
- 
+
 "set foldmethod=syntax
 set foldmethod=indent
 set nofoldenable
@@ -284,9 +286,15 @@ set backspace=indent,eol,start
 
 try
     colorscheme dracula
-catch     
+catch
     colorscheme ron
 endtry
+
+if executable('ag')
+    set grepprg="ag -nogroup --nocolor"
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+    "let g:ctrlp_use_caching = 0
+endif
 
 function! Hackvim()
     :e ~/.vimrc
