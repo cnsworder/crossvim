@@ -79,6 +79,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'fatih/vim-go'
 "python
 Plugin 'vim-flake8'
+"web
+Plugin 'mattn/emmet-vim'
 
 "代码导航
 Plugin 'Tagbar'
