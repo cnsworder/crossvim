@@ -33,6 +33,7 @@ Plugin 'The-NERD-tree'
 "快速搜索
 "Plugin 'FuzzyFinder'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'dyng/ctrlsf.vim'
 "状态栏
 Plugin 'bling/vim-airline'
 "Plugin 'Lokaltog/vim-powerline.git'
@@ -247,7 +248,6 @@ let g:ycm_key_list_previous_completion=[]
 
 let mapleader=";"
 
-imap <C-f> <ESC>:FufBuffer <cr>
 nnoremap <F5> :UndotreeToggle <cr>
 nnoremap <F3> :NERDTreeToggle <cr>
 nnoremap <F4> :TagbarToggle <cr>
@@ -259,8 +259,7 @@ nnoremap <silent> <leader>g :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
 
-nmap <silent> <leader>b :FufBuffer <cr>
-nmap <silent> <leader>f :FufFile <cr>
+nmap <silent> <leader>s :Ag <cr>
 nmap <silent> <leader>q :q <cr>
 nmap <silent> <leader>qq :q! <cr>
 nmap <silent> <leader>w :w <cr>
