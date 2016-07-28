@@ -248,10 +248,10 @@ let g:ycm_key_list_previous_completion=[]
 
 let mapleader=";"
 
-nnoremap <F5> :UndotreeToggle <cr>
-nnoremap <F3> :NERDTreeToggle <cr>
-nnoremap <F4> :TagbarToggle <cr>
-nnoremap <F10> :PluginUpdate <cr>
+nnoremap <leader>u :UndotreeToggle <cr>
+nnoremap <leader>nn :NERDTreeToggle <cr>
+nnoremap <leader>tt :TagbarToggle <cr>
+nnoremap <leader>uu :PluginUpdate <cr>
 nnoremap <leader>n :set number! <cr>
 nnoremap <leader>l :set list! <cr>
 nnoremap <leader>b :set wrap!<cr>
@@ -259,7 +259,9 @@ nnoremap <silent> <leader>g :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
 
-nmap <silent> <leader>s :Ag <cr>
+nmap <silent> <leader>ww :cw<cr>
+nmap <silent> <leader>wc :cclose<cr>
+nmap <silent> <leader>s :Ag<space>
 nmap <silent> <leader>q :q <cr>
 nmap <silent> <leader>qq :q! <cr>
 nmap <silent> <leader>w :w <cr>
