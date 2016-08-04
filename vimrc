@@ -51,6 +51,7 @@ Plugin 'zenorocha/dracula-theme',{'rtp':'vim/'}
 Plugin 'Lokaltog/vim-easymotion'
 "搜索
 Plugin 'rking/ag.vim'
+Plugin 'dkprice/vim-easygrep'
 "任务列表
 Plugin 'TaskList.vim'
 "撤销树
