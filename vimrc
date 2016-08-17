@@ -21,6 +21,9 @@ catch
     !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
     source .vimrc
     PluginInstall
+    if has("python")
+        !pip install powerline-status
+    endif
     quit
 endtry
 
@@ -35,7 +38,14 @@ Plugin 'The-NERD-tree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dyng/ctrlsf.vim'
 "状态栏
-Plugin 'bling/vim-airline'
+if ! has('python')
+    Plugin 'bling/vim-airline'
+elseif has('mac')
+    source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+    set laststatus=2
+else
+    source /usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+endif
 "Plugin 'Lokaltog/vim-powerline.git'
 "多光标
 Plugin 'terryma/vim-multiple-cursors.git'
