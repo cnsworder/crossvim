@@ -164,7 +164,8 @@ endif
 
 set nobackup
 set cursorline
-"set cursorcolumn
+set cursorcolumn
+set ruler
 "set hlsearch
 set tabstop=4
 set softtabstop=4
@@ -222,6 +223,7 @@ let g:miniBufExplMapWindowNavArrows = 1
 "let t_Co=256
 set laststatus=2
 set number
+set showcmd
 set nowrap
 set cscopeprg=gtags-cscope
 "cscope add GTAGS
