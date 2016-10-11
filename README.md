@@ -10,11 +10,11 @@
 | The-NERD-tree | 目录树 |
 | ctrlpvim/ctrlp.vim, dyng/ctrlsf.vim | 快速搜索 |
 | bling/vim-airline | 状态栏美化 |
-| zenorocha/dracula-theme',{'rtp':'vim/'} | 配色 |
+| zenorocha/dracula-theme | 配色 |
 | terryma/vim-multiple-cursors.git | 多光标 |
-| rking/ag.vim， dkprice/vim-easygrep' | 搜索 |
+| rking/ag.vim， dkprice/vim-easygrep | 搜索 |
 | Lokaltog/vim-easymotion | 搜索定位 |
-| Plugin 'TaskList.vim | 任务列表 |
+| Plugin TaskList.vim | 任务列表 |
 | mbbill/undotree | 撤销修改 |
 | Yggdroot/indentLine | 缩进提示 |
 | kien/rainbow_parentheses.vim | 括号高亮 |
@@ -41,4 +41,3 @@
 | fatih/vim-go | go |
 | vim-flake8 | python |
 | mattn/emmet-vim | web |
-'}
