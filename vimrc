@@ -31,12 +31,17 @@ endtry
 Plugin 'gmarik/vundle'
 Plugin 'L9'
 "Plugin 'junegunn/vim-plug'
+
+"首页
+Plugin 'mhinz/vim-startify'
 "目录树
 Plugin 'The-NERD-tree'
 "快速搜索
 "Plugin 'FuzzyFinder'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dyng/ctrlsf.vim'
+"文件图标
+Plugin 'ryanoasis/vim-devicons'
 "状态栏
 if ! has('python')
     Plugin 'bling/vim-airline'
@@ -159,7 +164,7 @@ endif
 if has("gui_running")
     "set guifont=文泉驿等宽微米黑\ 12
     "set guifont=DejaVu\ Sans\ Mono\ 10
-    set guifont=Source\ Code\ Pro:h16
+    set guifont=SauceCodePro\ Nerd\ Font:h16
 endif
 
 set nobackup
@@ -271,6 +276,12 @@ nnoremap <leader>b :set wrap!<cr>
 nnoremap <silent> <leader>g :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
+
+nmap <silent> <leader>gs :Gstatus<cr>
+nmap <silent> <leader>gc :Gcommit<cr>
+nmap <silent> <leader>gf :Gpull<cr>
+nmap <silent> <leader>gp :Gpush<cr>
+nmap <silent> <leader>gl :Glog<cr>
 
 nmap <silent> <leader>ww :cw<cr>
 nmap <silent> <leader>wc :cclose<cr>
