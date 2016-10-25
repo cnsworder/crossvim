@@ -42,6 +42,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dyng/ctrlsf.vim'
 "文件图标
 Plugin 'ryanoasis/vim-devicons'
+"bookmark
+Plugin 'MattesGroeger/vim-bookmarks'
 "状态栏
 if ! has('python')
     Plugin 'bling/vim-airline'
@@ -276,6 +278,9 @@ nnoremap <leader>b :set wrap!<cr>
 nnoremap <silent> <leader>g :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
+
+nmap <silent> <leader>m :BookmarkToggle<cr>
+nmap <silent> <leader>mm :BookmarkShowAll<cr>
 
 nmap <silent> <leader>gs :Gstatus<cr>
 nmap <silent> <leader>gc :Gcommit<cr>
