@@ -64,6 +64,9 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'zenorocha/dracula-theme',{'rtp':'vim/'}
 "Plugin 'tango.vim'
 
+" 异步执行
+Plugin 'skywind3000/asyncrun.vim'
+
 "搜索定位
 Plugin 'Lokaltog/vim-easymotion'
 "搜索
@@ -275,13 +278,17 @@ nnoremap <leader>uu :PluginUpdate <cr>
 nnoremap <leader>n :set number! <cr>
 nnoremap <leader>l :set list! <cr>
 nnoremap <leader>b :set wrap!<cr>
-nnoremap <silent> <leader>g :YcmCompleter GoTo <cr>
+nnoremap <silent> <leader>gt :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
 
-nmap <silent> <leader>m :BookmarkToggle<cr>
-nmap <silent> <leader>mm :BookmarkShowAll<cr>
+nmap <silent> <leader>mm :BookmarkToggle<cr>
+nmap <silent> <leader>ml :BookmarkShowAll<cr>
+nmap <silent> <leader>ms :BookmarkAnnotate<cr>
+nmap <silent> <leader>mn :BookmarkNext<cr>
+nmap <silent> <leader>mp :BookmarkPrev<cr>
 
+nmap <silent> <leader>ga :Git add %<cr>
 nmap <silent> <leader>gs :Gstatus<cr>
 nmap <silent> <leader>gc :Gcommit<cr>
 nmap <silent> <leader>gf :Gpull<cr>
