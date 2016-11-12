@@ -240,7 +240,12 @@ set cscopeprg=gtags-cscope
 
 "set encoding=utf-8
 "let g:Powerline_symbols = 'unicode'
-
+let g:ycm_complete_in_comments = 1 " 注释补全
+let g:ycm_complete_in_strings = 1 " 字符串补全
+let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串采集
+let g:ycm_collect_identifiers_from_tags_files = 1 " tags文件采集
+let g:ycm_seed_identifiers_with_syntax = 1 " 关键字补全
+let g:ycm_min_num_of_chars_for_completion = 1 " 第一个字符开始补全
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 let g:ycm_filetype_blacklist = {
             \ 'tagbar' : 1,
@@ -259,8 +264,8 @@ let g:clang_user_options=" -stdlib=libc++ -std=c++14 -Wall -fexceptions -I/usr/i
 let g:syntastic_check_on_open = 0
 let g:syntastic_cpp_compiler_options = ' -std=c++14 -Wall'
 
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+"let g:ycm_key_list_select_completion=[]
+"let g:ycm_key_list_previous_completion=[]
 
 
 "let g:syntastic_c_cflags_file=".clang_complete"
