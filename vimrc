@@ -287,6 +287,10 @@ nnoremap <silent> <leader>gt :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
 
+nnoremap <leader>pb :CtrlPBuffer<cr>
+nnoremap <leader>pt :CtrlPBufTag<cr>
+nnoremap <leader>pta :CtrlPBufTagAll<cr>
+
 nmap <silent> <leader>mm :BookmarkToggle<cr>
 nmap <silent> <leader>ml :BookmarkShowAll<cr>
 nmap <silent> <leader>ms :BookmarkAnnotate<cr>
