@@ -61,7 +61,7 @@ Plugin 'editorconfig/editorconfig-vim'
 
 "主题配色
 "Plugin 'molokai'
-Plugin 'zenorocha/dracula-theme',{'rtp':'vim/'}
+Plugin 'dracula/vim'
 "Plugin 'tango.vim'
 
 " 异步执行
