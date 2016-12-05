@@ -40,6 +40,7 @@ Plugin 'The-NERD-tree'
 "Plugin 'FuzzyFinder'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'dyng/ctrlsf.vim'
+Plugin 'junegunn/fzf.vim'
 "文件图标
 Plugin 'ryanoasis/vim-devicons'
 "bookmark
@@ -274,7 +275,8 @@ let g:syntastic_cpp_compiler_options = ' -std=c++14 -Wall'
 
 "set listchars=tab:→→,eol:◀,trail:·,nbsp:▢
 
-let mapleader=";"
+"let mapleader=";"
+let mapleader="\<Space>"
 
 nnoremap <leader>u :UndotreeToggle <cr>
 nnoremap <leader>nn :NERDTreeToggle <cr>
