@@ -340,6 +340,8 @@ nmap     <C-F>l <Plug>CtrlSFQuickfixPrompt
 vmap     <C-F>l <Plug>CtrlSFQuickfixVwordPath
 vmap     <C-F>L <Plug>CtrlSFQuickfixVwordExec
 
+let g:UltiSnipsExpandTrigger="<c-e>"
+
 "set foldmethod=syntax
 set foldmethod=indent
 set nofoldenable
