@@ -91,7 +91,8 @@ Plugin 'terryma/vim-expand-region'
 "头文件和源文件快速跳转
 Plugin 'a.vim'
 "代码检查
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 "git
 Plugin 'mattn/gist-vim'
 Plugin 'tpope/vim-fugitive'
