@@ -36,6 +36,7 @@ Plugin 'L9'
 Plugin 'mhinz/vim-startify'
 "目录树
 Plugin 'The-NERD-tree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 "快速搜索
 "Plugin 'FuzzyFinder'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -61,8 +62,9 @@ Plugin 'terryma/vim-multiple-cursors.git'
 Plugin 'editorconfig/editorconfig-vim'
 
 "主题配色
-"Plugin 'molokai'
+" Plugin 'molokai'
 Plugin 'dracula/vim'
+Plugin 'morhetz/gruvbox'
 "Plugin 'tango.vim'
 
 " 异步执行
@@ -351,7 +353,9 @@ syntax on
 set backspace=indent,eol,start
 
 try
-    colorscheme dracula
+    " colorscheme dracula
+    set background=dark
+    colorscheme gruvbox
 catch
     colorscheme ron
 endtry
