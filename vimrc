@@ -7,20 +7,26 @@ set fileencoding=utf-8
 set encoding=utf-8
 set fileencodings=utf-8,gb18030,gb2312,gbk
 set clipboard=unnamed
-filetype off
-syntax off
+
+let s:darwin = has('mac')
 
 set backupdir=/tmp
 set directory=/tmp
 
-set rtp+=~/.vim/bundle/vundle
+" set rtp+=~/.vim/plugged
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+    !mkdir autoload
+    !wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O ~/.vim/autoload/plug.vim
+    PlugInstall
+endif
 
 try
-    call vundle#begin()
+    call plug#begin('~/.vim/plugged')
 catch
-    !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
+    " !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
     source .vimrc
-    PluginInstall
+    PlugInstall
     if has("python")
         !pip install powerline-status
     endif
@@ -28,139 +34,147 @@ catch
 endtry
 
 "包管理
-Plugin 'gmarik/vundle'
-Plugin 'L9'
-"Plugin 'junegunn/vim-plug'
+" Plug 'gmarik/vundle'
+" Plug 'L9'
+"Plug 'junegunn/vim-plug'
 
 "首页
-Plugin 'mhinz/vim-startify'
+Plug 'mhinz/vim-startify'
 "目录树
-Plugin 'The-NERD-tree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plug 'The-NERD-tree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 "快速搜索
-"Plugin 'FuzzyFinder'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'dyng/ctrlsf.vim'
-Plugin 'junegunn/fzf.vim'
+"Plug 'FuzzyFinder'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dyng/ctrlsf.vim'
+Plug 'junegunn/fzf.vim'
 "文件图标
-Plugin 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 "bookmark
-Plugin 'MattesGroeger/vim-bookmarks'
+Plug 'MattesGroeger/vim-bookmarks'
 "状态栏
 if ! has('python')
-    Plugin 'bling/vim-airline'
+    Plug 'bling/vim-airline'
 elseif has('mac')
     source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
     set laststatus=2
 else
     source /usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 endif
-"Plugin 'Lokaltog/vim-powerline.git'
+"Plug 'Lokaltog/vim-powerline.git'
 "多光标
-Plugin 'terryma/vim-multiple-cursors.git'
+Plug 'terryma/vim-multiple-cursors.git'
 " editorconfig
-Plugin 'editorconfig/editorconfig-vim'
+Plug 'editorconfig/editorconfig-vim'
 
 "主题配色
-" Plugin 'molokai'
-Plugin 'dracula/vim'
-Plugin 'morhetz/gruvbox'
-"Plugin 'tango.vim'
+" Plug 'molokai'
+Plug 'dracula/vim'
+Plug 'morhetz/gruvbox'
+"Plug 'tango.vim'
 
 " 异步执行
-Plugin 'skywind3000/asyncrun.vim'
+Plug 'skywind3000/asyncrun.vim'
 
 "搜索定位
-Plugin 'Lokaltog/vim-easymotion'
+Plug 'Lokaltog/vim-easymotion'
 "搜索
-Plugin 'rking/ag.vim'
-Plugin 'dkprice/vim-easygrep'
+Plug 'rking/ag.vim'
+Plug 'dkprice/vim-easygrep'
 "任务列表
-Plugin 'TaskList.vim'
+Plug 'TaskList.vim'
 "撤销树
-Plugin 'mbbill/undotree'
+Plug 'mbbill/undotree'
 "缩进提示
-Plugin 'Yggdroot/indentLine'
-"Plugin 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
+"Plug 'nathanaelkane/vim-indent-guides'
 "括号高亮
-Plugin 'kien/rainbow_parentheses.vim'
+Plug 'kien/rainbow_parentheses.vim'
 "括号补全
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'surround.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'surround.vim'
 " 扩展选择区域
-Plugin 'terryma/vim-expand-region'
+Plug 'terryma/vim-expand-region'
 
 "头文件和源文件快速跳转
-Plugin 'a.vim'
+Plug 'a.vim'
 "代码检查
-" Plugin 'scrooloose/syntastic'
-Plugin 'w0rp/ale'
-"git
-Plugin 'mattn/gist-vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+if v:version >= 703
+    Plug 'w0rp/ale'
+else
+    Plug 'scrooloose/syntastic'
+endif
+
+" git
+Plug 'mattn/gist-vim'
+Plug 'airblade/vim-gitgutter'
+if v:version >= 703
+    Plug 'mhinz/vim-signify'
+else
+    Plug 'tpope/vim-fugitive'
+    Plug 'junegunn/gv.vim'
+endif
+
+
 "代码注释
-Plugin 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdcommenter'
 "golang
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go'
 "python
-Plugin 'vim-flake8'
+Plug 'vim-flake8'
 "web
-Plugin 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 
 "代码导航
-Plugin 'Tagbar'
+Plug 'Tagbar'
 
 "global导航
-Plugin 'gtags.vim'
+Plug 'gtags.vim'
 
 "帮助文档
-"Plugin 'Keithbsmiley/investigate.vim'
-Plugin 'DoxygenToolkit.vim'
+"Plug 'Keithbsmiley/investigate.vim'
+Plug 'DoxygenToolkit.vim'
 
-if has("mac")
-    Plugin 'rizzatti/dash.vim'
+if s:darwin
+    Plug 'rizzatti/dash.vim'
 else
-    Plugin 'KabbAmine/zeavim.vim'
+    Plug 'KabbAmine/zeavim.vim'
 endif
 
 
 "代码段提示
-Plugin 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 if has("python")
-    Plugin 'SirVer/ultiSnips'
+    Plug 'SirVer/ultiSnips'
 endif
 
 "代码格式化
 if has("python")
-    Plugin 'Chiel92/vim-autoformat'
+    Plug 'Chiel92/vim-autoformat'
 endif
 
 "标签页
-"Plugin 'minibufexpl.vim'
+"Plug 'minibufexpl.vim'
 "代码提示
 if v:version < 703
-    Plugin 'clang-complete'
+    Plug 'clang-complete'
 else
-    Plugin 'Valloric/YouCompleteMe'
+    Plug 'Valloric/YouCompleteMe'
 endif
 
 " 代码统计
-"Plugin 'wakatime/vim-wakatime'
+"Plug 'wakatime/vim-wakatime'
 
-"Plugin 'FriedSock/smeargle'
-"Plugin 'snipMate'
-"Plugin 'OmniCppComplete'
+"Plug 'FriedSock/smeargle'
+"Plug 'snipMate'
+"Plug 'OmniCppComplete'
 
 
-"Plugin 'MarcWeber/vim-addon-mw-utils'
-"Plugin 'tomtom/tlib_vim'
-"Plugin 'garbas/vim-snipmate'
+"Plug 'MarcWeber/vim-addon-mw-utils'
+"Plug 'tomtom/tlib_vim'
+"Plug 'garbas/vim-snipmate'
 
-call vundle#end()
-
-filetype plugin indent on
-
+call plug#end()
 
 
 if has("gui_running")
@@ -251,7 +265,7 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串
 let g:ycm_collect_identifiers_from_tags_files = 1 " tags文件采集
 let g:ycm_seed_identifiers_with_syntax = 1 " 关键字补全
 let g:ycm_min_num_of_chars_for_completion = 1 " 第一个字符开始补全
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 let g:ycm_filetype_blacklist = {
             \ 'tagbar' : 1,
             \ 'text' : 1,
@@ -285,7 +299,8 @@ let mapleader="\<Space>"
 nnoremap <leader>u :UndotreeToggle <cr>
 nnoremap <leader>nn :NERDTreeToggle <cr>
 nnoremap <leader>tt :TagbarToggle <cr>
-nnoremap <leader>uu :PluginUpdate <cr>
+nnoremap <leader>uu :PlugUpdate <cr>
+nnoremap <leader>uuu :PlugUpgrade <cr>
 nnoremap <leader>n :set number! <cr>
 nnoremap <leader>l :set list! <cr>
 nnoremap <leader>b :set wrap!<cr>
@@ -378,4 +393,4 @@ nmap <leader>h :call Hackvim()<cr>
 
 "set conceallevel=0
 
-"PluginUpdate
+"PlugUpdate
