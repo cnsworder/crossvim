@@ -63,7 +63,7 @@ else
 endif
 "Plug 'Lokaltog/vim-powerline.git'
 "多光标
-Plug 'terryma/vim-multiple-cursors.git'
+Plug 'terryma/vim-multiple-cursors'
 " editorconfig
 Plug 'editorconfig/editorconfig-vim'
 
