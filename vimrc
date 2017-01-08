@@ -48,6 +48,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf.vim'
+Plug 'haya14busa/incsearch.vim'
+Plug 'justinmk/vim-sneak'
 "文件图标
 Plug 'ryanoasis/vim-devicons'
 "bookmark
@@ -337,13 +339,34 @@ nmap <silent> <leader>a :A <cr>
 nmap <silent> <leader>d :TaskList <cr>
 nmap <silent> <leader>i :IndentLinesToggle<cr>
 
-nmap <Leader> <Plug>(easymotion-prefix)
-nmap / <Plug>(easymotion-sn)
-nmap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
+" nmap <Leader> <Plug>(easymotion-prefix)
+" nmap / <Plug>(easymotion-tn)
+" map  n <Plug>(easymotion-next)
+" map  N <Plug>(easymotion-prev)
+
+" incsearch
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
+"replace 'f' with 1-char Sneak
+nmap f <Plug>Sneak_f
+nmap F <Plug>Sneak_F
+xmap f <Plug>Sneak_f
+xmap F <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
+"replace 't' with 1-char Sneak
+nmap t <Plug>Sneak_t
+nmap T <Plug>Sneak_T
+xmap t <Plug>Sneak_t
+xmap T <Plug>Sneak_T
+omap t <Plug>Sneak_t
+omap T <Plug>Sneak_T
+
 map <leader>zz :set foldenable<cr>
 map <leader>zn :set nofoldenable<cr>
+
 
 "nerdcommment <leader>cc <leader>cu
 
