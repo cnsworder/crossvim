@@ -8,8 +8,9 @@ let mapleader="\<Space>"
 nnoremap <leader>u :UndotreeToggle <cr>
 nnoremap <leader>nn :NERDTreeToggle <cr>
 nnoremap <leader>tt :TagbarToggle <cr>
-nnoremap <leader>uu :PlugUpdate <cr>
-nnoremap <leader>uuu :PlugUpgrade <cr>
+nnoremap <leader>pu :PlugUpdate <cr>
+nnoremap <leader>puu :PlugUpgrade <cr>
+nnoremap <leader>pi :PlugInstall <cr>
 nnoremap <leader>n :set number! <cr>
 nnoremap <leader>l :set list! <cr>
 nnoremap <leader>b :set wrap!<cr>
