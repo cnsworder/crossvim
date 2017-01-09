@@ -39,8 +39,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf.vim'
-Plug 'haya14busa/incsearch.vim'
-Plug 'justinmk/vim-sneak'
 "文件图标
 Plug 'ryanoasis/vim-devicons'
 "bookmark
@@ -74,6 +72,9 @@ Plug 'Lokaltog/vim-easymotion'
 "搜索
 Plug 'rking/ag.vim'
 Plug 'dkprice/vim-easygrep'
+Plug 'haya14busa/incsearch.vim'
+Plug 'justinmk/vim-sneak'
+Plug 'haya14busa/incsearch-easymotion.vim'
 "任务列表
 Plug 'TaskList.vim'
 "撤销树

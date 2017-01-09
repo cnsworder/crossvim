@@ -55,6 +55,9 @@ nmap <silent> <leader>i :IndentLinesToggle<cr>
 map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
+map z/ <Plug>(incsearch-easymotion-/)
+map z? <Plug>(incsearch-easymotion-?)
+map zg/ <Plug>(incsearch-easymotion-stay)
 
 "replace 'f' with 1-char Sneak
 nmap f <Plug>Sneak_f

@@ -9,6 +9,7 @@ set encoding=utf-8
 set fileencodings=utf-8,gb18030,gb2312,gbk
 set clipboard=unnamed
 set nobackup
+" set hlsearch
 
 set cscopeprg=gtags-cscope
 "cscope add GTAGS
@@ -29,6 +30,9 @@ if executable('ag')
     let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
     "let g:ctrlp_use_caching = 0
 endif
+
+let g:sneak#label = 1
+let g:incsearch#autonohlsearch = 1
 
 "set list
 "let g:indent_guides_auto_colors=1

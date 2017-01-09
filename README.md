@@ -6,14 +6,14 @@
 
 | 插件 | 用途 |
 | --- | --- |
-| gmarik/vundle, L9 | 包管理 |
+| vim-plug | 包管理 |
 | The-NERD-tree | 目录树 |
 | ctrlpvim/ctrlp.vim, dyng/ctrlsf.vim | 快速搜索 |
 | bling/vim-airline | 状态栏美化 |
 | zenorocha/dracula-theme | 配色 |
 | terryma/vim-multiple-cursors.git | 多光标 |
 | rking/ag.vim， dkprice/vim-easygrep | 搜索 |
-| Lokaltog/vim-easymotion | 搜索定位 |
+| haya14busa/incsearch, justinmk/vim-sneak | 搜索定位 |
 | Plugin TaskList.vim | 任务列表 |
 | mbbill/undotree | 撤销修改 |
 | Yggdroot/indentLine | 缩进提示 |
@@ -30,7 +30,7 @@
 | mattn/gist-vim, tpope/vim-fugitive, airblade/vim-gitgutter | git |
 | scrooloose/nerdcommenter | 代码注释 |
 | Valloric/YouCompleteMe | 智能补全 |
-| scrooloose/syntastic | 代码检查 |
+| scrooloose/ale | 代码检查 |
 | Chiel92/vim-autoformat | 代码格式化 |
 | honza/vim-snippets | 代码段提示 |
 | rizzatti/dash.vim, KabbAmine/zeavim.vim | 帮助文档 |
