@@ -102,12 +102,9 @@ endif
 " git
 Plug 'mattn/gist-vim'
 Plug 'airblade/vim-gitgutter'
-if v:version >= 703
-    Plug 'mhinz/vim-signify'
-else
-    Plug 'tpope/vim-fugitive'
-    Plug 'junegunn/gv.vim'
-endif
+" Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/gv.vim'
 
 
 "代码注释
