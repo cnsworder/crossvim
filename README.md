@@ -2,6 +2,22 @@
 
 [仓库地址](https://github.com/cnsworder/crossvim)
 
+### 启动界面
+![](image/start.gif)
+
+### 包管理
+![](image/package.gif)
+
+### 文件搜索
+![](image/ctrlp.gif)
+
+### 文件和tag
+![](image/tree.gif)
+
+### 代码补全
+![](image/ycmd.gif)
+
+
 ### 基础
 
 | 插件 | 用途 |
