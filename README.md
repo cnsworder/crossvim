@@ -3,19 +3,19 @@
 [仓库地址](https://github.com/cnsworder/crossvim)
 
 ### 启动界面
-![](image/start.gif)
+![start](http://ocr26ve0z.bkt.clouddn.com/start.gif)
 
 ### 包管理
-![](image/package.gif)
+![package](http://ocr26ve0z.bkt.clouddn.com/package.gif)
 
 ### 文件搜索
-![](image/ctrlp.gif)
+![ctrlp](http://ocr26ve0z.bkt.clouddn.com/ctrlp.gif)
 
 ### 文件和tag
-![](image/tree.gif)
+![tree](http://ocr26ve0z.bkt.clouddn.com/tree.gif)
 
 ### 代码补全
-![](image/ycmd.gif)
+![ycmd](http://ocr26ve0z.bkt.clouddn.com/ycmd.gif)
 
 
 ### 基础
