@@ -43,6 +43,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'ryanoasis/vim-devicons'
 "bookmark
 Plug 'MattesGroeger/vim-bookmarks'
+Plug 'kshenoy/vim-signature'
 "状态栏
 if ! has('python')
     Plug 'bling/vim-airline'

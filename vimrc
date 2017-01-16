@@ -6,7 +6,7 @@
 source ~/.vim/init.vim
 
 " -- plug
-source ~/.vim/plug.vim
+source ~/.vim/plugs.vim
 
 " -- conf
 source ~/.vim/conf.vim
