@@ -39,7 +39,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf.vim'
-Plug 'Shougo/denite.nvim'
+if v:version >= 800 && has('python3')
+    Plug 'Shougo/denite.nvim'
+endif
 "文件图标
 Plug 'ryanoasis/vim-devicons'
 "bookmark
