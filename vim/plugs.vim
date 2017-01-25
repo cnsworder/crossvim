@@ -39,6 +39,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf.vim'
+Plug 'Shougo/denite.nvim'
 "文件图标
 Plug 'ryanoasis/vim-devicons'
 "bookmark
