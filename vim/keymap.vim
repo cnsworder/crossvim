@@ -5,22 +5,27 @@
 "let mapleader=";"
 let mapleader="\<Space>"
 
-nnoremap <leader>u :UndotreeToggle <cr>
+nnoremap <leader>uu :UndotreeToggle <cr>
 nnoremap <leader>nn :NERDTreeToggle <cr>
 nnoremap <leader>tt :TagbarToggle <cr>
 nnoremap <leader>pu :PlugUpdate <cr>
 nnoremap <leader>puu :PlugUpgrade <cr>
 nnoremap <leader>pi :PlugInstall <cr>
-nnoremap <leader>n :set number! <cr>
-nnoremap <leader>l :set list! <cr>
-nnoremap <leader>b :set wrap!<cr>
+nnoremap <leader>nn :set number! <cr>
+nnoremap <leader>ll :set list! <cr>
+nnoremap <leader>bb :set wrap!<cr>
 nnoremap <silent> <leader>gt :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
 
-nnoremap <leader>pb :CtrlPBuffer<cr>
-nnoremap <leader>pt :CtrlPBufTag<cr>
-nnoremap <leader>pta :CtrlPBufTagAll<cr>
+nnoremap <leader>ue :Unite source -start-insert<cr>
+nnoremap <C-p> :Unite file_rec/async -start-insert<cr>
+nnoremap <leader>o :Unite outline -start-insert<cr>
+nnoremap <leader>bf :Unite buffer -start-insert<cr>
+nnoremap <leader>k :Unite mapping -start-insert<cr>
+" nnoremap <leader>pb :CtrlPBuffer<cr>
+" nnoremap <leader>pt :CtrlPBufTag<cr>
+" nnoremap <leader>pta :CtrlPBufTagAll<cr>
 
 nmap <silent> <leader>mm :BookmarkToggle<cr>
 nmap <silent> <leader>ml :BookmarkShowAll<cr>

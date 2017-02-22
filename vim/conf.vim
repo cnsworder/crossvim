@@ -107,6 +107,12 @@ let g:clang_user_options=" -stdlib=libc++ -std=c++14 -Wall -fexceptions -I/usr/i
 let g:syntastic_check_on_open = 0
 let g:syntastic_cpp_compiler_options = ' -std=c++14 -Wall'
 
+let g:unite_source_rec_async_command = ['ag', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', '']
+let g:unite_enable_start_insert = 1
+let g:unite_eanble_auto_select = 1
+let g:unite_source_line_enable_highlight = 1
+let g:unite_prompt = ">>"
+
 "let g:ycm_key_list_select_completion=[]
 "let g:ycm_key_list_previous_completion=[]
 
