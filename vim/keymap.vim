@@ -18,11 +18,14 @@ nnoremap <silent> <leader>gt :YcmCompleter GoTo <cr>
 nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
 
-nnoremap <leader>ue :Unite source -start-insert<cr>
-nnoremap <C-p> :Unite file_rec/async -start-insert<cr>
-nnoremap <leader>o :Unite outline -start-insert<cr>
-nnoremap <leader>bf :Unite buffer -start-insert<cr>
-nnoremap <leader>k :Unite mapping -start-insert<cr>
+nnoremap <leader>us :Unite source -start-insert<cr>
+nnoremap <C-p> :Unite file/async -start-insert<cr>
+nnoremap <leader>uf :Unite file/async -start-insert<cr>
+nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
+nnoremap <leader>uo :Unite outline -start-insert<cr>
+nnoremap <leader>ug :Unite grep -start-insert<cr>
+nnoremap <leader>ub :Unite buffer -start-insert<cr>
+nnoremap <leader>uk :Unite mapping -start-insert<cr>
 " nnoremap <leader>pb :CtrlPBuffer<cr>
 " nnoremap <leader>pt :CtrlPBufTag<cr>
 " nnoremap <leader>pta :CtrlPBufTagAll<cr>
