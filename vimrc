@@ -3,8 +3,9 @@
 "
 
 if empty(glob('~/.vim/autoload/plug.vim'))
-    !mkdir autoload
+    !mkdir ~/.vim/autoload
     !wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O ~/.vim/autoload/plug.vim
+    source ~/.vim/autoload/plug.vim
     PlugInstall
 endif
 
