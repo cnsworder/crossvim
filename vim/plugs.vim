@@ -35,14 +35,17 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'kshenoy/vim-signature'
 " 状态栏
-if ! has('python')
-    Plug 'bling/vim-airline'
-elseif has('mac')
-    source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-    set laststatus=2
-else
-    source /usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
-endif
+try
+    if ! has('python')
+        Plug 'bling/vim-airline'
+    elseif has('mac')
+        source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+        set laststatus=2
+    else
+        source /usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+    endif
+endtry
+
 " Plug 'Lokaltog/vim-powerline.git'
 " 多光标
 Plug 'terryma/vim-multiple-cursors'
