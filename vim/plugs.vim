@@ -6,23 +6,6 @@ let s:darwin = has('mac')
 
 " set rtp+=~/.vim/plugged
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-    !mkdir autoload
-    !wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O ~/.vim/autoload/plug.vim
-    PlugInstall
-endif
-
-try
-    call plug#begin('~/.vim/plugged')
-catch
-    " !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
-    source .vimrc
-    PlugInstall
-    if has("python")
-        !pip install powerline-status
-    endif
-    quit
-endtry
 
 " 包管理
 " Plug 'gmarik/vundle'
