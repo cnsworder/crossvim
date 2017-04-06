@@ -42,7 +42,9 @@ try
         source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
         set laststatus=2
     else
-        source /usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+        if !empty(glob('/usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim'))
+            source /usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+        endif
     endif
 endtry
 
