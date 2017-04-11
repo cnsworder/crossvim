@@ -6,6 +6,14 @@ let s:darwin = has('mac')
 
 " set rtp+=~/.vim/plugged
 
+function! YcmHook(info)
+    python import os, sys, vim
+    python vim.command('let l:python_executable = \'%s\'' % os.path.join(sys.exec_prefix, 'bin', 'python'))
+    python del os, sys, vim
+    let l:command = '!' . l:python_executable . ' install.py --clang-completer --gocode-completer --tern-completer'
+    execute l:command
+endfunction
+
 
 " 包管理
 " Plug 'gmarik/vundle'
@@ -146,7 +154,7 @@ endif
 if v:version < 703
     Plug 'clang-complete'
 else
-    Plug 'Valloric/YouCompleteMe'
+    Plug 'Valloric/YouCompleteMe', {'do': function('YcmHook')}
 endif
 
 " 代码统计
