@@ -122,3 +122,4 @@ let g:unite_prompt = ">>"
 "let g:ctrlp_cmd = 'CtrlPBuffer'
 
 "set listchars=tab:→→,eol:◀,trail:·,nbsp:▢
+

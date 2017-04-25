@@ -22,6 +22,8 @@ endfunction
 
 " 首页
 Plug 'mhinz/vim-startify'
+" key mapping guid
+Plug 'hecal3/vim-leader-guide'
 " 目录树
 Plug 'The-NERD-tree'
 Plug 'Xuyuanp/nerdtree-git-plugin'

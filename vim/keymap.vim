@@ -29,6 +29,8 @@ nnoremap <leader>uk :Unite mapping -start-insert<cr>
 " nnoremap <leader>pb :CtrlPBuffer<cr>
 " nnoremap <leader>pt :CtrlPBufTag<cr>
 " nnoremap <leader>pta :CtrlPBufTagAll<cr>
+nnoremap <leader> :LeaderGuide ' '<cr>
+vnoremap <leader> :LeaderGuideVisual ' '<cr>
 
 nmap <silent> <leader>mm :BookmarkToggle<cr>
 nmap <silent> <leader>ml :BookmarkShowAll<cr>
