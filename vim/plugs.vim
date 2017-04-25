@@ -119,6 +119,8 @@ Plug 'fatih/vim-go'
 Plug 'vim-flake8'
 " web
 Plug 'mattn/emmet-vim'
+" Vue
+Plug 'posva/vim-vue'
 
 " 代码导航
 Plug 'Tagbar'
