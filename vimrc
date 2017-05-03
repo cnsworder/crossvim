@@ -3,7 +3,7 @@
 "
 
 if empty(glob('~/.vim/autoload/plug.vim'))
-    !mkdir ~/.vim/autoload
+    !mkdir -p ~/.vim/autoload
     !wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim -O ~/.vim/autoload/plug.vim
     call plug#begin('~/.vim/plugged')
     source ~/.vim/plugs.vim
