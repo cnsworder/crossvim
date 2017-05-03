@@ -1,15 +1,22 @@
 #!/usr/bin/env bash
 # 快速安装配置
 
-if [ -e ~/.vimrc ]; then
-    rm -rf ~/.vimrc
-fi
-ln -s vimrc ~/.vimrc
 
-if [ -e ~/.vim ]; then
-    rm -rf ~/.vim
+if [ -L ${HOME}/.vimrc  -o -e ${HOME}/.vimrc ]; then
+    echo "remove ~/.vimrc"
+    rm -rf ${HOME}/.vimrc
 fi
-ln -s vim ~/.vim
+
+ln -s `pwd`/vimrc ${HOME}/.vimrc
+
+if [ -L ${HOME}/.vim -o -e ${HOME}/.vim ]; then
+    echo "remove ~/.vim"
+    rm -rf ${HOME}/.vim
+fi
+
+ln -s `pwd`/vim ${HOME}/.vim
+
+echo "Install crossvim"
 
 vim +PlugUpgrade +PlugInstall +qall
 

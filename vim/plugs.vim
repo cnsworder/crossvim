@@ -25,7 +25,7 @@ Plug 'mhinz/vim-startify'
 " key mapping guid
 Plug 'hecal3/vim-leader-guide'
 " 目录树
-Plug 'The-NERD-tree'
+Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " 快速搜索
 " Plug 'FuzzyFinder'
@@ -82,7 +82,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'haya14busa/incsearch-easymotion.vim'
 " 任务列表
-Plug 'TaskList.vim'
+Plug 'vim-scripts/TaskList.vim'
 " 撤销树
 Plug 'mbbill/undotree'
 " 缩进提示
@@ -92,12 +92,12 @@ Plug 'Yggdroot/indentLine'
 Plug 'kien/rainbow_parentheses.vim'
 " 括号补全
 Plug 'jiangmiao/auto-pairs'
-Plug 'surround.vim'
+Plug 'tpope/vim-surround'
 " 扩展选择区域
 Plug 'terryma/vim-expand-region'
 
 " 头文件和源文件快速跳转
-Plug 'a.vim'
+Plug 'vim-scripts/a.vim'
 " 代码检查
 if v:version >= 703
     Plug 'w0rp/ale'
@@ -118,21 +118,21 @@ Plug 'scrooloose/nerdcommenter'
 " golang
 Plug 'fatih/vim-go'
 " python
-Plug 'vim-flake8'
+Plug 'nvie/vim-flake8'
 " web
 Plug 'mattn/emmet-vim'
 " Vue
 Plug 'posva/vim-vue'
 
 " 代码导航
-Plug 'Tagbar'
+Plug 'majutsushi/tagbar'
 
 " global导航
-Plug 'gtags.vim'
+Plug 'vim-scripts/gtags.vim'
 
 " 帮助文档
 " Plug 'Keithbsmiley/investigate.vim'
-Plug 'DoxygenToolkit.vim'
+Plug 'vim-scripts/DoxygenToolkit.vim'
 
 if s:darwin
     Plug 'rizzatti/dash.vim'
