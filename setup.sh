@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 # 快速安装配置
 
-if -e ~/.vimrc;then
+if [ -e ~/.vimrc ]; then
     rm ~/.vimrc
 fi
 ln -s vimrc ~/.vimrc
 
-if -e ~/.vim;then
+if [ -e ~/.vim]; then
     rm ~/.vim
 fi
 ln -s vim ~/.vim
