@@ -2,12 +2,12 @@
 # 快速安装配置
 
 if [ -e ~/.vimrc ]; then
-    rm ~/.vimrc
+    rm -rf ~/.vimrc
 fi
 ln -s vimrc ~/.vimrc
 
 if [ -e ~/.vim ]; then
-    rm ~/.vim
+    rm -rf ~/.vim
 fi
 ln -s vim ~/.vim
 
