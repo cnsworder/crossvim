@@ -6,7 +6,7 @@ if [ -e ~/.vimrc ]; then
 fi
 ln -s vimrc ~/.vimrc
 
-if [ -e ~/.vim]; then
+if [ -e ~/.vim ]; then
     rm ~/.vim
 fi
 ln -s vim ~/.vim
