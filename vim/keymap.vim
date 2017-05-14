@@ -25,6 +25,7 @@ nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
 nnoremap <leader>uo :Unite outline -start-insert<cr>
 nnoremap <leader>ug :Unite grep -start-insert<cr>
 nnoremap <leader>ub :Unite buffer -start-insert<cr>
+nnoremap <leader>ut :Unite tab:no-current -start-insert<cr>
 nnoremap <leader>uk :Unite mapping -start-insert<cr>
 " nnoremap <leader>pb :CtrlPBuffer<cr>
 " nnoremap <leader>pt :CtrlPBufTag<cr>
