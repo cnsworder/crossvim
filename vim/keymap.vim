@@ -2,6 +2,14 @@
 " cnsworder@gmail.com
 " 快捷键配置
 
+" 默认
+" Ctrl-[ 退出插入
+" Ctrl-o Ctrl-i Ctrl-t Ctrl-]
+" Ctrl-o 临时退出
+" Ctrl-c 退出补全
+" Ctrl-y, emmet补全
+" ysW' i字符两边插入引号
+
 "let mapleader=";"
 let mapleader="\<Space>"
 
