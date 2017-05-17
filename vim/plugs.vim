@@ -38,6 +38,7 @@ else
     Plug 'Shougo/vimproc.vim', {'do': 'make'}
     Plug 'Shougo/unite.vim'
     Plug 'Shougo/unite-outline'
+    Plug 'hewes/unite-gtags'
 endif
 " 文件图标
 Plug 'ryanoasis/vim-devicons'

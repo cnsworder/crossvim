@@ -35,6 +35,12 @@ nnoremap <leader>ug :Unite grep -start-insert<cr>
 nnoremap <leader>ub :Unite buffer -start-insert<cr>
 nnoremap <leader>ut :Unite tab:no-current -start-insert<cr>
 nnoremap <leader>uk :Unite mapping -start-insert<cr>
+nnoremap <leader>td :Unite gtags/def<cr>
+nnoremap <leader>tr :Unite gtags/ref<cr>
+nnoremap <leader>tg :Unite gtags/grep<cr>
+nnoremap <leader>tc :Unite gtags/context<cr>
+nnoremap <leader>tf :Unite gtags/file<cr>
+nnoremap <leader>tp :Unite gtags/path<cr>
 " nnoremap <leader>pb :CtrlPBuffer<cr>
 " nnoremap <leader>pt :CtrlPBufTag<cr>
 " nnoremap <leader>pta :CtrlPBufTagAll<cr>
