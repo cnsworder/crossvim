@@ -55,6 +55,8 @@ try
     else
         if !empty(glob('/usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim'))
             source /usr/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+        else
+            Plug 'bling/vim-airline'
         endif
     endif
 endtry
