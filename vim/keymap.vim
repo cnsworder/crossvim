@@ -14,7 +14,7 @@
 let mapleader="\<Space>"
 
 nnoremap <leader>uu :UndotreeToggle <cr>
-nnoremap <leader>nn :NERDTreeToggle <cr>
+nnoremap <leader>ne :NERDTreeToggle <cr>
 nnoremap <leader>tt :TagbarToggle <cr>
 nnoremap <leader>pu :PlugUpdate <cr>
 nnoremap <leader>puu :PlugUpgrade <cr>

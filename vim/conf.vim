@@ -19,6 +19,8 @@ set cscopeprg=gtags-cscope
 set backupdir=/tmp
 set directory=/tmp
 
+" 匹配增强
+packadd! matchit
 " set rtp+=~/.vim/plugged
 
 let g:ctrlp_use_caching = 1

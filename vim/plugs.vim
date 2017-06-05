@@ -120,8 +120,11 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'fatih/vim-go'
 " python
 Plug 'nvie/vim-flake8'
+" python virtualenv
+Plug 'jmcantrell/vim-virtualenv'
 " web
 Plug 'mattn/emmet-vim'
+Plug 'ternjs/tern_for_vim'
 " Vue
 Plug 'posva/vim-vue'
 
@@ -134,6 +137,12 @@ Plug 'vim-scripts/gtags.vim'
 " 帮助文档
 " Plug 'Keithbsmiley/investigate.vim'
 Plug 'vim-scripts/DoxygenToolkit.vim'
+
+" markdown
+" Plug 'plasticboy/vim-markdown'
+
+" restructuredtext
+Plug 'Rykka/riv.vim'
 
 if s:darwin
     Plug 'rizzatti/dash.vim'
