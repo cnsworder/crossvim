@@ -22,9 +22,10 @@ nnoremap <leader>pi :PlugInstall <cr>
 nnoremap <leader>nn :set number! <cr>
 nnoremap <leader>ll :set list! <cr>
 nnoremap <leader>bb :set wrap!<cr>
-nnoremap <silent> <leader>gt :YcmCompleter GoTo <cr>
-nnoremap <silent> <leader>gi :YcmCompleter GoToInclude <cr>
-nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition <cr>
+nnoremap <silent> <leader>gt :YcmCompleter GoTo<cr>
+nnoremap <silent> <leader>gi :YcmCompleter GoToInclude<cr>
+nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition<cr>
+nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
 nnoremap <leader>us :Unite source -start-insert<cr>
 nnoremap <C-p> :Unite file/async -start-insert<cr>
