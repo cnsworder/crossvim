@@ -29,6 +29,7 @@ nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
 nnoremap <leader>us :Unite source -start-insert<cr>
 nnoremap <C-p> :Unite file/async -start-insert<cr>
+nnoremap <leader>ud :UniteWithInput file/async -start-insert<cr>
 nnoremap <leader>uf :Unite file/async -start-insert<cr>
 nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
 nnoremap <leader>uo :Unite outline -start-insert<cr>
