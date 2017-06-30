@@ -75,7 +75,7 @@ nmap <silent> <leader>qa :qall<cr>
 nmap <silent> <leader>a :A <cr>
 nmap <silent> <leader>d :TaskList <cr>
 nmap <silent> <leader>i :IndentLinesToggle<cr>
-
+nmap <silent> <leader>fm gg=G
 " nmap <Leader> <Plug>(easymotion-prefix)
 " nmap / <Plug>(easymotion-tn)
 " map  n <Plug>(easymotion-next)
