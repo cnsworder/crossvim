@@ -30,6 +30,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " 快速搜索
 " Plug 'FuzzyFinder'
 " Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Yggdroot/LeaderF'
 Plug 'dyng/ctrlsf.vim'
 Plug 'junegunn/fzf.vim'
 if v:version >= 800 && has('python3')
@@ -93,6 +94,7 @@ Plug 'Yggdroot/indentLine'
 " Plug 'nathanaelkane/vim-indent-guides'
 " 括号高亮
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'Yggdroot/hiPairs'
 " 括号补全
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
