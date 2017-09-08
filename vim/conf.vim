@@ -2,6 +2,7 @@
 " cnsworder@gmail.com
 " 自定义配置
 
+let s:darwin = has('mac')
 
 set nocompatible
 set fileencoding=utf-8
@@ -21,7 +22,9 @@ set backupdir=/tmp
 set directory=/tmp
 
 " 匹配增强
-packadd! matchit
+if ! has("nvim")
+ packadd! matchit
+endif
 " set rtp+=~/.vim/plugged
 
 " nerdtree
