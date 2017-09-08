@@ -9,6 +9,7 @@ set encoding=utf-8
 set fileencodings=utf-8,gb18030,gb2312,gbk
 set clipboard=unnamed
 set nobackup
+set autochdir
 " set hlsearch
 
 set cscopeprg=gtags-cscope

@@ -95,6 +95,7 @@ Plug 'Yggdroot/indentLine'
 " 括号高亮
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'Yggdroot/hiPairs'
+Plug 'Valloric/MatchTagAlways'
 " 括号补全
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
