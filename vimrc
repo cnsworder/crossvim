@@ -23,7 +23,7 @@ catch
 endtry
 
 " -- init
-source ~/.vim/init.vim
+" source ~/.vim/init.vim
 
 " -- plug
 source ~/.vim/plugs.vim
