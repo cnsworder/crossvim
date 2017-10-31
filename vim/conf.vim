@@ -123,6 +123,11 @@ let g:unite_eanble_auto_select = 1
 let g:unite_source_line_enable_highlight = 1
 let g:unite_prompt = ">>"
 
+" ale
+let g:ale_sign_column_always = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+
 " leaderGuide
 " let g:leaderGuide_position = 'topleft'
 

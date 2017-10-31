@@ -29,14 +29,14 @@ nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
 nnoremap <leader>f :find .
 nnoremap <leader>us :Unite source -start-insert<cr>
-nnoremap <C-p> :Unite file/async -start-insert<cr>
+nnoremap <C-p> :LeaderfFile<cr>
 nnoremap <leader>ud :UniteWithInput file/async -start-insert<cr>
 nnoremap <leader>us :Unite find -start-insert<cr>
 nnoremap <leader>uf :Unite file/async -start-insert<cr>
 nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
 nnoremap <leader>uo :Unite outline -start-insert<cr>
 nnoremap <leader>ug :Unite grep -start-insert<cr>
-nnoremap <leader>ub :Unite buffer -start-insert<cr>
+nnoremap <leader>ub :LeaderfBuffer<cr>
 nnoremap <leader>ut :Unite tab:no-current -start-insert<cr>
 nnoremap <leader>uk :Unite mapping -start-insert<cr>
 nnoremap <leader>td :Unite gtags/def<cr>

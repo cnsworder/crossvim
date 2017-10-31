@@ -8,7 +8,8 @@ let s:darwin = has('mac')
 
 function! YcmHook(info)
     python import os, sys, vim
-    python vim.command('let l:python_executable = \'%s\'' % os.path.join(sys.exec_prefix, 'bin', 'python3'))
+    " python vim.command('let l:python_executable = \'%s\'' % os.path.join(sys.exec_prefix, 'bin', 'python3'))
+    python vim.command('let l:python_executable = \'%s\'' % os.path.join('/usr', 'bin', 'python3'))
     python del os, sys, vim
     let l:command = '!' . l:python_executable . ' install.py --clang-completer --gocode-completer --tern-completer'
     execute l:command
@@ -167,6 +168,7 @@ endif
 " 代码格式化
 if has("python")
     Plug 'Chiel92/vim-autoformat'
+    Plug 'sbdchd/neoformat'
 endif
 
 " 标签页
