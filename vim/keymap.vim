@@ -29,23 +29,31 @@ nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition<cr>
 nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
 nnoremap <leader>f :find .
-nnoremap <leader>us :Unite source -start-insert<cr>
+
+if g:used_denite == 1
+  nnoremap <leader>us :Denite source -start-insert<cr>
+  nnoremap <leader>ud :DeniteWithInput file/async -start-insert<cr>
+  nnoremap <leader>us :Denite find -start-insert<cr>
+  nnoremap <leader>uf :Denite file/async -start-insert<cr>
+  nnoremap <leader>ur :Denite file_rec/async -start-insert<cr>
+  nnoremap <leader>uo :Denite outline -start-insert<cr>
+  nnoremap <leader>up :Denite grep -start-insert<cr>
+  nnoremap <leader>ut :Denite tab:no-current -start-insert<cr>
+  nnoremap <leader>uk :Denite mapping -start-insert<cr>
+else
+  nnoremap <leader>us :Unite source -start-insert<cr>
+  nnoremap <leader>ud :UniteWithInput file/async -start-insert<cr>
+  nnoremap <leader>us :Unite find -start-insert<cr>
+  nnoremap <leader>uf :Unite file/async -start-insert<cr>
+  nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
+  nnoremap <leader>uo :Unite outline -start-insert<cr>
+  nnoremap <leader>up :Unite grep -start-insert<cr>
+  nnoremap <leader>ut :Unite tab:no-current -start-insert<cr>
+  nnoremap <leader>uk :Unite mapping -start-insert<cr>
+endif
+
 nnoremap <C-p> :LeaderfFile<cr>
-nnoremap <leader>ud :UniteWithInput file/async -start-insert<cr>
-nnoremap <leader>us :Unite find -start-insert<cr>
-nnoremap <leader>uf :Unite file/async -start-insert<cr>
-nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
-nnoremap <leader>uo :Unite outline -start-insert<cr>
-nnoremap <leader>up :Unite grep -start-insert<cr>
 nnoremap <leader>ub :LeaderfBuffer<cr>
-nnoremap <leader>ut :Unite tab:no-current -start-insert<cr>
-nnoremap <leader>uk :Unite mapping -start-insert<cr>
-nnoremap <leader>td :Unite gtags/def<cr>
-nnoremap <leader>tr :Unite gtags/ref<cr>
-nnoremap <leader>tg :Unite gtags/grep<cr>
-nnoremap <leader>tc :Unite gtags/context<cr>
-nnoremap <leader>tf :Unite gtags/file<cr>
-nnoremap <leader>tp :Unite gtags/path<cr>
 " nnoremap <leader>pb :CtrlPBuffer<cr>
 " nnoremap <leader>pt :CtrlPBufTag<cr>
 " nnoremap <leader>pta :CtrlPBufTagAll<cr>

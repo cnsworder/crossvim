@@ -35,13 +35,21 @@ Plug 'Yggdroot/LeaderF'
 Plug 'dyng/ctrlsf.vim'
 set rtp+=~/.fzf
 Plug 'junegunn/fzf.vim'
+let g:used_denite=0
 if v:version >= 800 && has('python3')
     Plug 'Shougo/denite.nvim'
+    Plug 'Shougo/defx.nvim'
+    Plug 'ozelentok/denite-gtags'
+    Plug 'Shougo/unite-outline'
+    Plug 'chemzqm/unite-location'
+    Plug 'hewes/unite-gtags'
+    let g:used_denite=1
 else
     Plug 'Shougo/vimproc.vim', {'do': 'make'}
     Plug 'Shougo/unite.vim'
     Plug 'Shougo/unite-outline'
-    Plug 'hewes/unite-gtags'
+    Plug 'rafi/vim-denite-z'
+    Plug 'chemzqm/unite-location'
 endif
 " 文件图标
 Plug 'ryanoasis/vim-devicons'
