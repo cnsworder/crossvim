@@ -33,6 +33,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Yggdroot/LeaderF'
 Plug 'dyng/ctrlsf.vim'
+set rtp+=~/.fzf
 Plug 'junegunn/fzf.vim'
 if v:version >= 800 && has('python3')
     Plug 'Shougo/denite.nvim'

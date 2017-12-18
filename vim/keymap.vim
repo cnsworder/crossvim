@@ -36,7 +36,7 @@ nnoremap <leader>us :Unite find -start-insert<cr>
 nnoremap <leader>uf :Unite file/async -start-insert<cr>
 nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
 nnoremap <leader>uo :Unite outline -start-insert<cr>
-nnoremap <leader>ug :Unite grep -start-insert<cr>
+nnoremap <leader>up :Unite grep -start-insert<cr>
 nnoremap <leader>ub :LeaderfBuffer<cr>
 nnoremap <leader>ut :Unite tab:no-current -start-insert<cr>
 nnoremap <leader>uk :Unite mapping -start-insert<cr>
