@@ -7,14 +7,17 @@ if [ -L ${HOME}/.vimrc  -o -e ${HOME}/.vimrc ]; then
     rm -rf ${HOME}/.vimrc
 fi
 
-ln -s `pwd`/vimrc ${HOME}/.vimrc
 
 if [ -L ${HOME}/.vim -o -e ${HOME}/.vim ]; then
     echo "remove ~/.vim"
     rm -rf ${HOME}/.vim
 fi
-
-ln -s `pwd`/vim ${HOME}/.vim
+if which stow &> /dev/null; then
+    stow . -t ${HOME}
+else
+    ln -s `pwd`/.vimrc ${HOME}/.vimrc
+    ln -s `pwd`/.vim ${HOME}/.vim
+fi
 
 echo "Install crossvim"
 
