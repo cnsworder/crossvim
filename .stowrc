@@ -1,4 +1,6 @@
 --ignore=.git
+--ignore=.gitignore
+--ignore=.DS_Store
 --ignore=.stowrc
 --ignore=README.md
 --ignore=setup.sh
