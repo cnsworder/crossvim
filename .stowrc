@@ -1,4 +1,4 @@
---ignore='.git'
---ignore='.stowrc'
---ignore='README.md'
---ignore='setup.sh'
+--ignore=.git
+--ignore=.stowrc
+--ignore=README.md
+--ignore=setup.sh
