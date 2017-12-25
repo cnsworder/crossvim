@@ -31,12 +31,12 @@ nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 nnoremap <leader>f :find .
 
 if g:used_denite == 1
-  nnoremap <leader>us :Denite source -start-insert<cr>
-  nnoremap <leader>ud :DeniteWithInput file/async -start-insert<cr>
-  nnoremap <leader>us :Denite find -start-insert<cr>
-  nnoremap <leader>uf :Denite file/async -start-insert<cr>
-  nnoremap <leader>ur :Denite file_rec/async -start-insert<cr>
-  nnoremap <leader>uo :Denite outline -start-insert<cr>
+  nnoremap <leader>us :Denite tag -start-insert<cr>
+  nnoremap <leader>ud :Denite directory_rec -start-insert<cr>
+  nnoremap <leader>us :Denite jump -start-insert<cr>
+  nnoremap <leader>uf :Denite file -start-insert<cr>
+  nnoremap <leader>ur :Denite file_rec -start-insert<cr>
+  nnoremap <leader>uo :Denite outline<cr>
   nnoremap <leader>up :Denite grep -start-insert<cr>
   nnoremap <leader>ut :Denite tab:no-current -start-insert<cr>
   nnoremap <leader>uk :Denite mapping -start-insert<cr>
