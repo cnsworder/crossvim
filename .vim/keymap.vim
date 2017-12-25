@@ -28,24 +28,22 @@ nnoremap <silent> <leader>gi :YcmCompleter GoToInclude<cr>
 nnoremap <silent> <leader>gd :YcmCompleter GoToDefinition<cr>
 nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
-nnoremap <leader>f :find .
+"fzf
+nnoremap <leader>f :Files<cr>
+nnoremap <C-x> :Commands<cr>
 
+" Denite
 if g:used_denite == 1
-  nnoremap <leader>us :Denite tag -start-insert<cr>
-  nnoremap <leader>ud :Denite directory_rec -start-insert<cr>
-  nnoremap <leader>us :Denite jump -start-insert<cr>
-  nnoremap <leader>uf :Denite file -start-insert<cr>
-  nnoremap <leader>ur :Denite file_rec -start-insert<cr>
+  nnoremap <leader>us :Denite tag<cr>
+  nnoremap <leader>ud :Denite directory_rec<cr>
+  nnoremap <leader>uf :Denite file<cr>
+  nnoremap <leader>us :Denite jump<cr>
   nnoremap <leader>uo :Denite outline<cr>
-  nnoremap <leader>up :Denite grep -start-insert<cr>
-  nnoremap <leader>ut :Denite tab:no-current -start-insert<cr>
-  nnoremap <leader>uk :Denite mapping -start-insert<cr>
+  nnoremap <leader>up :Denite grep<cr>
 else
   nnoremap <leader>us :Unite source -start-insert<cr>
   nnoremap <leader>ud :UniteWithInput file/async -start-insert<cr>
   nnoremap <leader>us :Unite find -start-insert<cr>
-  nnoremap <leader>uf :Unite file/async -start-insert<cr>
-  nnoremap <leader>ur :Unite file_rec/async -start-insert<cr>
   nnoremap <leader>uo :Unite outline -start-insert<cr>
   nnoremap <leader>up :Unite grep -start-insert<cr>
   nnoremap <leader>ut :Unite tab:no-current -start-insert<cr>
@@ -57,6 +55,7 @@ nnoremap <leader>ub :LeaderfBuffer<cr>
 " nnoremap <leader>pb :CtrlPBuffer<cr>
 " nnoremap <leader>pt :CtrlPBufTag<cr>
 " nnoremap <leader>pta :CtrlPBufTagAll<cr>
+
 nnoremap <leader> :LeaderGuide ' '<cr>
 vnoremap <leader> :LeaderGuideVisual ' '<cr>
 
