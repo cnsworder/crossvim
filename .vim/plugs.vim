@@ -28,6 +28,8 @@ Plug 'hecal3/vim-leader-guide'
 " 目录树
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+" 自动环境变量
+Plug 'direnv/direnv.vim'
 " 快速搜索
 " Plug 'FuzzyFinder'
 " Plug 'ctrlpvim/ctrlp.vim'
