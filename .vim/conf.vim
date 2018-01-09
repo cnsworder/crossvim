@@ -22,10 +22,8 @@ set backupdir=/tmp
 set directory=/tmp
 
 " 匹配增强
-if ! has("nvim")
- try
+if ! has("packadd") && v:version > 800
     packadd! matchit
- endtry
 endif
 " set rtp+=~/.vim/plugged
 

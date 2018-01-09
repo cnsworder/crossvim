@@ -29,7 +29,9 @@ Plug 'hecal3/vim-leader-guide'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " 自动环境变量
-Plug 'direnv/direnv.vim'
+if executable('direnv')
+    Plug 'direnv/direnv.vim'
+endif
 " 快速搜索
 " Plug 'FuzzyFinder'
 " Plug 'ctrlpvim/ctrlp.vim'
@@ -142,7 +144,9 @@ endif
 " python
 Plug 'nvie/vim-flake8'
 " python pyenv
-Plug 'lambdalisue/vim-pyenv'
+if executable('pyenv')
+    Plug 'lambdalisue/vim-pyenv'
+endif
 " python virtualenv
 Plug 'jmcantrell/vim-virtualenv'
 " web
@@ -189,9 +193,7 @@ endif
 " 标签页
 " Plug 'minibufexpl.vim'
 " 代码提示
-if v:version < 743
-    Plug 'clang-complete'
-else
+if v:version > 743
     Plug 'Valloric/YouCompleteMe', {'do': function('YcmHook')}
 endif
 
