@@ -39,7 +39,11 @@ if v:version >= 744
     Plug 'Yggdroot/LeaderF'
 endif
 Plug 'dyng/ctrlsf.vim'
-set rtp+=~/.fzf
+if s:darwin
+    set rtp+=/usr/local/opt/fzf
+else
+    set rtp+=~/.fzf
+endif
 Plug 'junegunn/fzf.vim'
 let g:used_denite=0
 if v:version >= 800 && has('python3')
@@ -180,7 +184,7 @@ endif
 
 " 代码段提示
 Plug 'honza/vim-snippets'
-if has("python")
+if has("python") || has("python3")
     Plug 'SirVer/ultiSnips'
 endif
 
