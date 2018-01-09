@@ -23,7 +23,9 @@ set directory=/tmp
 
 " 匹配增强
 if ! has("nvim")
- packadd! matchit
+ try
+    packadd! matchit
+ endtry
 endif
 " set rtp+=~/.vim/plugged
 

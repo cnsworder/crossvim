@@ -33,7 +33,9 @@ Plug 'direnv/direnv.vim'
 " 快速搜索
 " Plug 'FuzzyFinder'
 " Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Yggdroot/LeaderF'
+if v:version >= 744
+    Plug 'Yggdroot/LeaderF'
+endif
 Plug 'dyng/ctrlsf.vim'
 set rtp+=~/.fzf
 Plug 'junegunn/fzf.vim'
@@ -134,7 +136,9 @@ Plug 'junegunn/gv.vim'
 " 代码注释
 Plug 'scrooloose/nerdcommenter'
 " golang
-Plug 'fatih/vim-go'
+if v:version >= 742
+    Plug 'fatih/vim-go'
+endif
 " python
 Plug 'nvie/vim-flake8'
 " python pyenv
@@ -185,7 +189,7 @@ endif
 " 标签页
 " Plug 'minibufexpl.vim'
 " 代码提示
-if v:version < 703
+if v:version < 743
     Plug 'clang-complete'
 else
     Plug 'Valloric/YouCompleteMe', {'do': function('YcmHook')}
