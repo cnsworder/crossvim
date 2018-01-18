@@ -30,14 +30,15 @@ nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 
 "fzf
 nnoremap <leader>f :Files<cr>
+nnoremap <leader>sn :Snippets<cr>
 nnoremap <C-x> :Commands<cr>
 
 " Denite
 if g:used_denite == 1
-  nnoremap <leader>us :Denite tag<cr>
+  nnoremap <leader>ut :Denite tag<cr>
   nnoremap <leader>ud :Denite directory_rec<cr>
   nnoremap <leader>uf :Denite file<cr>
-  nnoremap <leader>us :Denite jump<cr>
+  nnoremap <leader>uj :Denite jump<cr>
   nnoremap <leader>uo :Denite outline<cr>
   nnoremap <leader>up :Denite grep<cr>
 else
@@ -74,7 +75,7 @@ nmap <silent> <leader>gl :Glog<cr>
 
 nmap <silent> <leader>ww :cw<cr>
 nmap <silent> <leader>wc :cclose<cr>
-nmap <silent> <leader>s :Ag<space>
+nmap <silent> <leader>ss :Ag<space>
 nmap <silent> <leader>q :q <cr>
 nmap <silent> <leader>qq :q! <cr>
 nmap <silent> <leader>w :w <cr>
