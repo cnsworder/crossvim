@@ -199,6 +199,7 @@ endif
 " 代码提示
 if v:version > 743
     Plug 'Valloric/YouCompleteMe', {'do': function('YcmHook')}
+    Plug 'tenfyzhong/CompleteParameter.vim'
 endif
 
 " 代码统计

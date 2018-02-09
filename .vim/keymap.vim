@@ -32,6 +32,7 @@ nnoremap <silent> <leader>gr :YcmCompleter GoToReferences<cr>
 nnoremap <leader>f :Files<cr>
 nnoremap <leader>sn :Snippets<cr>
 nnoremap <C-x> :Commands<cr>
+nnoremap <leader>hi :History<cr>
 
 " Denite
 if g:used_denite == 1
