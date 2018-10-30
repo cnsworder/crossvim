@@ -28,6 +28,8 @@ Plug 'hecal3/vim-leader-guide'
 " 目录树
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+" 自动调整目录
+Plug 'airblade/vim-rooter'
 " 自动环境变量
 if executable('direnv')
     Plug 'direnv/direnv.vim'
@@ -39,6 +41,7 @@ if v:version >= 744
     Plug 'Yggdroot/LeaderF'
 endif
 Plug 'dyng/ctrlsf.vim'
+Plug 'brooth/far.vim'
 if s:darwin
     set rtp+=/usr/local/opt/fzf
 else
@@ -148,11 +151,11 @@ endif
 " python
 Plug 'nvie/vim-flake8'
 " python pyenv
-if executable('pyenv')
-    Plug 'lambdalisue/vim-pyenv'
-endif
+"if executable('pyenv')
+"    Plug 'lambdalisue/vim-pyenv'
+"endif
 " python virtualenv
-Plug 'jmcantrell/vim-virtualenv'
+" Plug 'jmcantrell/vim-virtualenv'
 " web
 Plug 'mattn/emmet-vim'
 Plug 'ternjs/tern_for_vim'
