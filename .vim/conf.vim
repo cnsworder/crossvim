@@ -93,34 +93,14 @@ let g:miniBufExplMapWindowNavArrows = 1
 
 "let g:Powerline_symbols = 'unicode'
 
-" Ycm
-let g:ycm_auto_trigger = 1
-let g:ycm_key_invoke_completion = '<c-\>'
-let g:ycm_key_list_stop_completion = ['<c-y>']
-let g:ycm_key_list_select_completion = ['<c-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<c-p>', '<Up>']
-let g:ycm_min_num_of_chars_for_completion = 99 " 第一个字符开始补全
-let g:ycm_complete_in_comments = 1 " 注释补全
-let g:ycm_complete_in_strings = 1 " 字符串补全
-let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串采集
-let g:ycm_collect_identifiers_from_tags_files = 1 " tags文件采集
-let g:ycm_seed_identifiers_with_syntax = 1 " 关键字补全
-let g:ycm_use_ultisnips_completer = 1 " 片段补全
-let g:ycm_global_ycm_extra_conf = "~/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-let g:ycm_add_preview_to_completeopt = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
-let g:ycm_filetype_blacklist = {
-            \ 'tagbar' : 1,
-            \ 'text' : 1,
-            \ 'qf' : 1,
-            \ 'gitcommit' : 1,
+
+let g:deoplete#enable_at_startup = 1
+let g:LanguageClient_serverCommands = {
+            \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
+            \ 'python': ['pyls'],
+            \ 'shell': ['shellcheck'],
             \ }
 
-inoremap <silent><expr> ( complete_parameter#pre_complete("()")
-smap <c-j> <Plug>(complete_parameter#goto_next_parameter)
-imap <c-j> <Plug>(complete_parameter#goto_next_parameter)
-smap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
-imap <c-k> <Plug>(complete_parameter#goto_previous_parameter)
 
 let g:AutoPairs = {'[':']', '{':'}',"'":"'",'"':'"', '`':'`'}
 inoremap <buffer><silent> ) <C-R>=AutoPairsInsert(')')<CR>

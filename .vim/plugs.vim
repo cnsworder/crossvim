@@ -200,9 +200,19 @@ endif
 " 标签页
 " Plug 'minibufexpl.vim'
 " 代码提示
-if v:version > 743
-    Plug 'Valloric/YouCompleteMe', {'do': function('YcmHook')}
-    Plug 'tenfyzhong/CompleteParameter.vim'
+if v:version > 800
+    " Plug 'Valloric/YouCompleteMe', {'do': function('YcmHook')}
+    " Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+    if has('nvim')
+        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    else
+        Plug 'Shougo/deoplete.nvim'
+        Plug 'roxma/nvim-yarp'
+        Plug 'roxma/vim-hug-neovim-rpc'
+    endif
+    " Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh'}
+
+    " Plug 'tenfyzhong/CompleteParameter.vim'
 endif
 
 " 代码统计
