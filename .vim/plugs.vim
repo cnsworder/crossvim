@@ -47,7 +47,12 @@ if s:darwin
 else
     set rtp+=~/.fzf
 endif
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'tracyone/fzf-funky',{'on': 'CtrlPFunky'}
+
+Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+
 let g:used_denite=0
 if v:version >= 800 && has('python3')
     Plug 'Shougo/denite.nvim'
@@ -64,6 +69,16 @@ else
     Plug 'rafi/vim-denite-z'
     Plug 'chemzqm/unite-location'
 endif
+
+if has('nvim')
+  Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/defx.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+
 " 文件图标
 Plug 'ryanoasis/vim-devicons'
 " bookmark
@@ -164,6 +179,7 @@ Plug 'posva/vim-vue'
 
 " 代码导航
 Plug 'majutsushi/tagbar'
+Plug 'liuchengxu/vista.vim'
 
 " global导航
 Plug 'vim-scripts/gtags.vim'
