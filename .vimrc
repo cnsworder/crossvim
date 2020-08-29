@@ -18,6 +18,7 @@ catch
     if has("python")
         !pip3 install pynvim
         !pip3 install powerline-status
+        CocInstall coc-marketplace coc-json coc-snippets coc-git coc-vimlsp coc-sh
     endif
     quit
 endtry
