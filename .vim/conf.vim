@@ -101,7 +101,7 @@ let g:miniBufExplMapWindowNavArrows = 1
 "let g:Powerline_symbols = 'unicode'
 
 
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 let g:LanguageClient_serverCommands = {
             \ 'javascript': ['/usr/local/bin/javascript-typescript-stdio'],
             \ 'python': ['pyls'],
