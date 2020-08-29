@@ -13,11 +13,11 @@ endif
 try
     call plug#begin('~/.vim/plugged')
 catch
-    " !git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle
     source .vimrc
     PlugInstall
     if has("python")
-        !pip install powerline-status
+        !pip3 install pynvim
+        !pip3 install powerline-status
     endif
     quit
 endtry
@@ -26,7 +26,7 @@ endtry
 " source ~/.vim/init.vim
 
 " -- plug
-source ~/.vim/plugs.vim
+source ~/.vim/plugins.vim
 
 " -- conf
 source ~/.vim/conf.vim

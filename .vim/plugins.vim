@@ -6,15 +6,6 @@ let s:darwin = has('mac')
 
 " set rtp+=~/.vim/plugged
 
-function! YcmHook(info)
-    python import os, sys, vim
-    " python vim.command('let l:python_executable = \'%s\'' % os.path.join(sys.exec_prefix, 'bin', 'python3'))
-    " python vim.command('let l:python_executable = \'%s\'' % os.path.join('/usr', 'bin', 'python3'))
-    python del os, sys, vim
-    let l:command = '!' . l:python_executable . ' install.py --clang-completer --gocode-completer --tern-completer'
-    execute l:command
-endfunction
-
 
 " 包管理
 " Plug 'gmarik/vundle'
@@ -22,9 +13,12 @@ endfunction
 " Plug 'junegunn/vim-plug'
 
 " 首页
-Plug 'mhinz/vim-startify'
+Plug 'liuchengxu/vim-clap'
+Plug 'hardcoreplayers/dashboard-nvim'
+
 " key mapping guid
 Plug 'hecal3/vim-leader-guide'
+
 " 目录树
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -51,7 +45,6 @@ endif
 Plug 'junegunn/fzf.vim'
 Plug 'tracyone/fzf-funky',{'on': 'CtrlPFunky'}
 
-Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
 let g:used_denite=0
 if v:version >= 800 && has('python3')
@@ -117,26 +110,33 @@ Plug 'skywind3000/asyncrun.vim'
 
 " 搜索定位
 Plug 'Lokaltog/vim-easymotion'
+
 " 搜索
 Plug 'rking/ag.vim'
 Plug 'dkprice/vim-easygrep'
 Plug 'haya14busa/incsearch.vim'
 Plug 'justinmk/vim-sneak'
 Plug 'haya14busa/incsearch-easymotion.vim'
+
 " 任务列表
 Plug 'vim-scripts/TaskList.vim'
+
 " 撤销树
 Plug 'mbbill/undotree'
+
 " 缩进提示
 Plug 'Yggdroot/indentLine'
 " Plug 'nathanaelkane/vim-indent-guides'
+
 " 括号高亮
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'Yggdroot/hiPairs'
 Plug 'Valloric/MatchTagAlways'
+
 " 括号补全
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
+
 " 扩展选择区域
 Plug 'terryma/vim-expand-region'
 
@@ -174,6 +174,7 @@ Plug 'nvie/vim-flake8'
 " web
 Plug 'mattn/emmet-vim'
 Plug 'ternjs/tern_for_vim'
+
 " Vue
 Plug 'posva/vim-vue'
 
@@ -189,10 +190,10 @@ Plug 'vim-scripts/gtags.vim'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " markdown
-" Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
 
 " restructuredtext
-Plug 'Rykka/riv.vim'
+"Plug 'Rykka/riv.vim'
 
 if s:darwin
     Plug 'rizzatti/dash.vim'
@@ -217,8 +218,7 @@ endif
 " Plug 'minibufexpl.vim'
 " 代码提示
 if v:version > 800
-    " Plug 'Valloric/YouCompleteMe', {'do': function('YcmHook')}
-    " Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     if has('nvim')
         Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     else
@@ -226,22 +226,9 @@ if v:version > 800
         Plug 'roxma/nvim-yarp'
         Plug 'roxma/vim-hug-neovim-rpc'
     endif
-    " Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh'}
-
-    " Plug 'tenfyzhong/CompleteParameter.vim'
 endif
 
 " 代码统计
-"Plug 'wakatime/vim-wakatime'
-
-"Plug 'FriedSock/smeargle'
-"Plug 'snipMate'
-"Plug 'OmniCppComplete'
-
-
-" Plug 'MarcWeber/vim-addon-mw-utils'
-" Plug 'tomtom/tlib_vim'
-" Plug 'garbas/vim-snipmate'
 
 call plug#end()
 
