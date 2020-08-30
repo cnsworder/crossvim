@@ -23,9 +23,10 @@ set directory=/tmp
 
 let g:indentLine_fileTypeExclude = ['dashboard']
 
+let g:dashboard_default_header = 'superman'
 let g:dashboard_default_executive ='clap'
 let g:dashboard_fzf_engine = 'ag'
-let g:dashboard_default_header = 'superman'
+
 
 " 匹配增强
 if ! has("nvim") && v:version > 800

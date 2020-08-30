@@ -46,6 +46,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'tracyone/fzf-funky',{'on': 'CtrlPFunky'}
 
 
+
 let g:used_denite=0
 if v:version >= 800 && has('python3')
     Plug 'Shougo/denite.nvim'
@@ -55,6 +56,7 @@ if v:version >= 800 && has('python3')
     Plug 'chemzqm/unite-location'
     Plug 'hewes/unite-gtags'
     let g:used_denite=1
+    Plug 'voldikss/vim-floaterm'
 else
     Plug 'Shougo/vimproc.vim', {'do': 'make'}
     Plug 'Shougo/unite.vim'
@@ -219,13 +221,13 @@ endif
 " 代码提示
 if v:version > 800
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    if has('nvim')
-        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    else
-        Plug 'Shougo/deoplete.nvim'
-        Plug 'roxma/nvim-yarp'
-        Plug 'roxma/vim-hug-neovim-rpc'
-    endif
+    "if has('nvim')
+    "    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    "else
+    "    Plug 'Shougo/deoplete.nvim'
+    "    Plug 'roxma/nvim-yarp'
+    "    Plug 'roxma/vim-hug-neovim-rpc'
+    "endif
 endif
 
 " 代码统计
