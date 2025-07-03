@@ -14,7 +14,8 @@ let s:darwin = has('mac')
 
 " 首页
 Plug 'liuchengxu/vim-clap'
-Plug 'hardcoreplayers/dashboard-nvim'
+"Plug 'hardcoreplayers/dashboard-nvim'
+Plug 'glepnir/dashboard-nvim'
 
 " key mapping guid
 Plug 'hecal3/vim-leader-guide'
@@ -41,7 +42,7 @@ if s:darwin
 else
     set rtp+=~/.fzf
 endif
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
 Plug 'tracyone/fzf-funky',{'on': 'CtrlPFunky'}
 
@@ -82,6 +83,7 @@ Plug 'kshenoy/vim-signature'
 " 状态栏
 try
     if ! has('python')
+        Plug 'khzaw/vim-conceal'
         Plug 'bling/vim-airline'
     elseif has('mac')
         source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
@@ -176,9 +178,6 @@ Plug 'nvie/vim-flake8'
 " web
 Plug 'mattn/emmet-vim'
 Plug 'ternjs/tern_for_vim'
-
-" Vue
-Plug 'posva/vim-vue'
 
 " 代码导航
 Plug 'majutsushi/tagbar'
